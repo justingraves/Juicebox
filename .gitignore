@@ -10,3 +10,32 @@
 *.lai
 *.la
 *.a
+
+build
+
+# XCode junk
+*.xcodeproj
+*.pbxproj
+*.xcworkspace
+xcuserdata
+
+# Sublime Text junk
+*.sublime-project
+*.sublime-workspace
+
+# Python
+*.pickle
+*.pyc
+*.egg
+*.egg-info
+*.egg-info/*
+
+# Mac
+.DS_Store
+*.dSYM
+
+# GNU Tools
+*.gmon
+*.out
+profile
+*.gch
