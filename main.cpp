@@ -8,10 +8,17 @@
 
 #include <iostream>
 #include "juicebox.h"
+#include "jblogger.h"
 
 int main(int argc, const char * argv[])
 {
-	cout << "Juicebox" << endl;
+	jblog_default_print_at = JBLogTrace;
+	jblog_default_log_at = JBLogMessage;
+	
+	JBLogger logger("server.log");
+	
+	logger.logf(JBLogMessage, "Welcome to Juicebox");
+	
 	Juicebox db;
     return 0;
 }
